@@ -13,8 +13,57 @@
     <div class="row">
         <div class="col-md-12 toolbar bg-dark ">
             <div class="text-center mt-3 d-flex justify-content-center">
-                
-            </div>
+
+                <div class="bold button">
+                    <button class="bold" onclick="applyBold()">
+                        <img src="Resources/bold-xxl.png" alt="Bold">
+                    </button>
+                </div>
+                <div class="underline button">
+                    <button onclick="applyUnderline()">
+                        <img src="Resources/format_underline_white_192x192.png" alt="Underline">
+                    </button>
+                </div>
+                <div class="ilatic button">
+                    <button onclick="applyItalic()">
+                        <img src="Resources/italic-xxl.png" alt="Italic">
+                  </button>
+                </div>
+                <div class="button-container">
+                    <input type="color" id="fontColorPicker" onchange="applyFontColor()">
+                </div>
+                <div class="left button">
+                    <button onclick="alignText('left')">
+                        <img src="Resources/left.png" alt="Align Left">
+                    </button>
+                </div>
+                <div class="center button">
+                    <button onclick="alignText('center')">
+                        <img src="Resources/center.png" alt="Align Center">
+                    </button>
+                </div>
+                <div class="Right button">
+                    <button onclick="alignText('right')">
+                        <img src="Resources/right.png" alt="Align Right">
+                    </button>
+                </div>
+                <div class="justify button">
+                    <button onclick="alignText('justify')">
+                        <img src="Resources/justify.png" alt="Justify">
+                    </button>
+                </div>
+                <div class="undo button">
+                    <button onclick="undo()">
+                        <img src="Resources/undo-4-32.png" alt="Undo">
+                    </button>
+                </div>
+                <div class="redo button">
+                    <button onclick="redo()">
+                        <img src="Resources/action-redo-32.png" alt="Redo">
+                    </button>
+              </div>
+      </div>
+
             <div id="editor" contenteditable="true"></div>
         </div>
     </div>
