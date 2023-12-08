@@ -1,0 +1,26 @@
+#editor {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    min-height: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.toolbar{
+    height:50px
+}
+.button-container {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+button {
+    border: 5px;
+    background: black;
+    cursor: pointer;
+    width: 40px; /* Set a common width for all buttons */
+}
+
+button img {
+    max-width: 100%;
+    max-height: 100%;
+}
