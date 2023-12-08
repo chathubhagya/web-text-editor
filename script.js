@@ -1,7 +1,4 @@
 
-function applyItalic() {
-    document.execCommand('italic', false, null);
-}
 document.execCommand('defaultParagraphSeparator', false, 'p');
 
 // Formatting functions
@@ -18,4 +15,8 @@ function applyItalic() {
 function applyFontColor() {
     var fontColor = document.getElementById('fontColorPicker').value;
     document.execCommand('foreColor', false, fontColor);
+}
+
+function alignText(align) {
+    document.execCommand('justify' + align, false, null);
 }
