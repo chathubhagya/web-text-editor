@@ -1,4 +1,7 @@
 
+function applyItalic() {
+    document.execCommand('italic', false, null);
+}
 document.execCommand('defaultParagraphSeparator', false, 'p');
 
 // Formatting functions
@@ -7,4 +10,7 @@ function applyBold() {
 }
 function applyUnderline() {
     document.execCommand('underline', false, null);
+}
+function applyItalic() {
+    document.execCommand('italic', false, null);
 }
