@@ -13,6 +13,25 @@
     <div class="row">
         <div class="col-md-12 toolbar bg-dark ">
             <div class="text-center mt-3 d-flex justify-content-center">
+
+                <div class="bold button">
+                    <button class="bold" onclick="applyBold()">
+                        <img src="Resources/bold-xxl.png" alt="Bold">
+                    </button>
+                </div>
+                <div class="underline button">
+                    <button onclick="applyUnderline()">
+                        <img src="Resources/format_underline_white_192x192.png" alt="Underline">
+                    </button>
+                </div>
+                <div class="ilatic button">
+                    <button onclick="applyItalic()">
+                        <img src="Resources/italic-xxl.png" alt="Italic">
+                  </button>
+                </div>
+                <div class="button-container">
+                    <input type="color" id="fontColorPicker" onchange="applyFontColor()">
+                </div>
                 <div class="left button">
                     <button onclick="alignText('left')">
                         <img src="Resources/left.png" alt="Align Left">
@@ -33,7 +52,7 @@
                         <img src="Resources/justify.png" alt="Justify">
                     </button>
                 </div>
-            </div>
+      </div>
             <div id="editor" contenteditable="true"></div>
         </div>
     </div>
