@@ -20,3 +20,11 @@ function applyFontColor() {
 function alignText(align) {
     document.execCommand('justify' + align, false, null);
 }
+
+function undo() {
+    document.execCommand('undo', false, null);
+}
+
+function redo() {
+    document.execCommand('redo', false, null);
+}
